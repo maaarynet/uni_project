@@ -8,12 +8,12 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
       </head>
 <body>
-    <header class="bg-purple-400 h-14 flex justify-center items-center">
+    <header class="bg-purple-400 h-14 flex justify-center items-center max-w-full">
         <p class="text-4xl text-white">Список підгруп і розклад</p>
     </header>
 
-    <div class="flex m-5">
-    <section class="flex gap-8">
+    <div class="flex m-5 gap-3 justify-around">
+    <section class="flex">
     <div class="list-disc text-xl">
         <li>Підгрупа 1</li>
         <div class="ml-10">
@@ -35,7 +35,7 @@
         </div>
        
     </div>
-    <div class="list-disc text-xl">
+    <div class="list-disc text-xl ml-5">
         <li>Підгрупа 2</li>
         <div class="ml-10">
         <li class="list-decimal">Бригада</li>
@@ -58,7 +58,7 @@
     </div>
     </section>
 
-    <table class="text-xl text-center ml-16">
+    <table class="text-xl text-center">
         <tbody class="border-2 border-black">
             <tr>
                 <td>День/урок</td>
@@ -98,10 +98,37 @@
             </tr>
         </tbody>
     </table>
+
+    <div class="text-xl">
+        <input name="radio" type="radio"/>Підгрупа 1
+        <input class="ml-4" name="radio" type="radio"/>Підгрупа 2
+
+        <div>
+        <select class="bg-gradient-to-b from-white to-purple-200 border-2 border-gray-400 rounded-md mt-3" name="user_profile_color_1">
+            <option value="1">Бригада 1</option>
+            <option value="2">Бригада 2</option>
+            <option value="2">Бригада 3</option>
+        </select>
+        </div>
+
+        <div>
+            <label class="mr-2" for="textarea">Прізвище</label>
+            <input class="bg-purple-100 border-2 border-gray-400 rounded-md mt-3" id="textarea" class="bg-black" type="text" />
+        </div>
+        <div>
+            <label class="mr-2" for="textarea">Ім'я</label>
+            <input class="bg-purple-100 border-2 border-gray-400 rounded-md mt-3" id="textarea" class="bg-black" type="text" />
+        </div>
+
+        <button class="bg-purple-200 border-2 border-gray-400 rounded-full mt-3 hover:bg-pink-200 duration-300"><p class="mx-4 my-1">Додати студента</p></button>
+
+    </div>
+    
+
     </div>
 
-<!--     <footer class="h-56 bg-green-600 text-white text-xl">footer -->
-<!--     </footer> -->
+    <!-- <footer class="h-56 bg-green-600 text-white text-xl">footer -->
+    <!-- </footer> -->
 
 </body>
 </html>
