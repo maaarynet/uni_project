@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>btr</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>1</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      </head>
 <body>
-    <h1>hello world</h1>
+    <header class="bg-purple-400 h-14 flex justify-center items-center">
+        <p class="text-4xl text-white">Список підгруп і розклад</p>
+    </header>
+
+    <div class="flex m-5">
+    <section class="flex gap-8">
+    <div class="list-disc text-xl">
+        <li>Підгрупа 1</li>
+        <div class="ml-10">
+        <li class="list-decimal">Бригада</li>
+        <div>
+            <li class="ml-6">Студент 1</li>
+            <li class="ml-6">Студент 2</li>
+        </div>
+        <li class="list-decimal">Бригада</li>
+        <div>
+            <li class="ml-6">Студент 1</li>
+            <li class="ml-6">Студент 2</li>
+        </div>
+        <li class="list-decimal">Бригада</li>
+        <div>
+            <li class="ml-6">Студент 1</li>
+            <li class="ml-6">Студент 2</li>
+        </div>
+        </div>
+       
+    </div>
+    <div class="list-disc text-xl">
+        <li>Підгрупа 2</li>
+        <div class="ml-10">
+        <li class="list-decimal">Бригада</li>
+        <div>
+            <li class="ml-6">Студент 1</li>
+            <li class="ml-6">Студент 2</li>
+        </div>
+        <li class="list-decimal">Бригада</li>
+        <div>
+            <li class="ml-6">Студент 1</li>
+            <li class="ml-6">Студент 2</li>
+        </div>
+        <li class="list-decimal">Бригада</li>
+        <div>
+            <li class="ml-6">Студент 1</li>
+            <li class="ml-6">Студент 2</li>
+        </div>
+        </div>
+       
+    </div>
+    </section>
+
+    <table class="text-xl text-center ml-16">
+        <tbody class="border-2 border-black">
+            <tr>
+                <td>День/урок</td>
+                <td class="border-2 border-black">Тиждень</td>
+                <td>урок 1</td>
+                <td class="border-2 border-black">урок 2</td>
+                <td>урок 3</td>
+                <td class="border-2 border-black">урок 4</td>
+                <td>урок 5</td>
+                <td class="border-2 border-black">урок 6</td>
+            </tr>
+            <tr class="border-2 border-black">
+                <td>Понеділок</td>
+                <td class="border-2 border-black">I</td>
+                <td rowspan="2" colspan="2" class="border-2 border-black">Лекція 5119</td>
+                <td rowspan="2" colspan="2" class="border-2 border-black">ЛР 5125</td>
+                <td class="border-2 border-black"></td> 
+            </tr>
+            <tr class="border-2 border-black">
+                <td>Понеділок</td>
+                <td class="border-2 border-black">II</td>
+                <td class="border-2 border-black"></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="border-2 border-black">Вівторок</td>
+                <td class="border-2 border-black">I</td>
+                <td rowspan="2" colspan="2" class="border-2 border-black"></td>
+                <td rowspan="2" class="border-2 border-black"></td>
+                <td class="border-2 border-black"></td> 
+                <td class="border-2 border-black"></td> 
+            </tr>
+            <tr class="border-2 border-black">
+                <td class="border-2 border-black">II</td>
+                <td class="border-2 border-black">Лекція 5119</td>
+                <td class="border-2 border-black"></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <footer class="h-56 bg-green-600 text-white text-xl">footer
+    </footer>
+
 </body>
 </html>
